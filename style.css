@@ -1,0 +1,29 @@
+* {
+    content: ''
+}
+
+body {
+    content: 
+        "<script>alert('Hello JASS')</script> \
+        <div id='content'></div>";
+}
+
+#content {
+    content: "<ul id='foobar'></ul>"
+}
+
+#foobar {
+    color: red;
+    content: 
+        "<li> \
+            <div class='helloworld'></div> \
+        </li> \
+        <li> \
+            <div class='helloworld'></div> \
+        </li>";
+}
+
+.helloworld {
+    color: blue;
+    content: "Hello World!"
+}
